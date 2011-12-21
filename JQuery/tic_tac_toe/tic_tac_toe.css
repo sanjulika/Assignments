@@ -1,0 +1,22 @@
+table#ttt{
+background-color:yellow;
+border-collapse:collapse;
+margin:auto;
+}
+td{
+cursor:pointer;
+border:2px solid gray;
+height:50px;
+width:50px;
+text-align:center;
+}
+
+.unselected{
+}
+.selectedX{
+color:#999999;
+}
+.selectedO{
+color:#000000;
+}
+

@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript" src="JsFiles/event.js"></script>
+</head>
+<body onload="ask()">
+<h1>My first JavaScript program</h1>
+<div id="date"></div>
+<input type="button" value="Display Date" onclick="datedisplay()">
+<form action="start.html" name="myform">
+First Name<input type="text" id="fname" name="namef" value ="enter name" onblur="set(this.id)" onfocus="remove(this.id)">
+Last Name<input type="text" id="lname" name="namel" placeholder="enter last name">
+<input type="submit" onclick="check(myform)">
+</form>
+<div id="color" onmousedown="alert('doble click the change color button and see my magic')" style="width:20%;">
+i will change my color on double click
+</div>
+<input type="button" value="change color" ondblclick="changecolor()">
+<div>
+<img src="images/right.jpg" id="changeimage" onmouseover='mouseover()' onmouseout='mouseout()'>
+</div>
+</body>
+</html>
+
