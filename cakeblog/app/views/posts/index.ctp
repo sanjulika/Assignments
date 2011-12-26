@@ -14,7 +14,7 @@ foreach ($posts as $post):
         <td><?php echo $post['Post']['id']; ?></td>
         <td>
 	   <?php
-    echo $this->Html->link($post['Post']['title'], array     ('controller' => 'posts', 'action' => 'view', $post['Post']['id'])); 
+    echo $this->Html->link($post['Post']['title'], array ('controller' => 'posts', 'action' => 'view', $post['Post']['id']));
            ?>        
        </td>
         <td><?php echo $post['Post']['created']; ?></td>
@@ -23,3 +23,7 @@ foreach ($posts as $post):
  endforeach; 
 ?>
 </table>
+    <?php
+    echo $this->Html->link('View',array('controller'=>'posts','action'=>'view'));
+            ?>
+

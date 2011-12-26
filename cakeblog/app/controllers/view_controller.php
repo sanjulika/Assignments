@@ -15,5 +15,11 @@ class ViewController extends AppController {
         function posts_1() {
                 
 	}
+        function posts_2() {
+
+	}
+        function posts_3() {
+echo "I am 3rd blog writen in controller";
+	}
 }
 ?>
