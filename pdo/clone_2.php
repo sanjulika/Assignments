@@ -5,11 +5,10 @@ class AnimalClass{
    public $password ='webonise6186';
    public $animal_id;
    public $animal_name;
-   public $animal_type;      
+   public $animal_type;
    public $db;
    public $query='select * from animals';
    function _construct(){
-      
       try{
            $this->db = new PDO('mysql:host=localhost;dbname=webonise', $this->username, $this->password);
            echo "<br/>connection established <br/>-----------------------------------<br/>";
@@ -19,16 +18,16 @@ class AnimalClass{
           echo $error_string->getMessage();
       }
    }
-   
+
    public function CreateTransaction(){
-       
+
            $this->db->beginTransaction();
 
        try{
-     /*** CREATE table statements ***/
+    /*** CREATE table statements ***/
        $table = "CREATE TABLE animal ( animal_id MEDIUMINT(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,animal_type VARCHAR(25) NOT NULL,animal_name VARCHAR(25) NOT NULL)";
        $this->db->exec($table);
-     /***  insert statements ***/
+    /***  insert statements ***/
        $this->db->exec("insert into animal (animal_type, animal_name) values ('emu', 'bruce')");
        $this->db->exec("insert into animal (animal_type, animal_name) values ('funnel web', 'bruce')");
        $this->db->exec("insert into animal (animal_type, animal_name) values ('lizard', 'bruce')");
@@ -54,7 +53,7 @@ class AnimalClass{
 
    public function insertData(){
       /*Insert query*/
-      //$this->db=$this->_construct();
+      $this->db=$this->_construct();
       $count = $this->db->exec("insert into animals(animal_type, animal_name) values ('kiwi', 'troy'),('Panther','pantha')")or die('error in query');
       if ($count===0){
          echo "No rows effected";
@@ -131,14 +130,14 @@ class AnimalClass{
          echo $row['animal_type']."<br/>";
        }
     }
-   
+
    public function prepareQuery(){
        $this->db=$this->_construct();
        $animal_id = 10; // will not execute this bcoz 15 will overwrite 10.
        $animal_type = 'crocodile';
        $animal_name = 'king kong';
        $query = "select * from animals where animal_id = :animal_id ";
-       
+
       //$query = "select * from animals where animal_id = :animal_id or animal_name=:animal_name";
        $stmt = $this->db->prepare($query);
        $stmt->bindParam(':animal_id', $animal_id, PDO::PARAM_INT);
@@ -176,9 +175,10 @@ class AnimalClass{
 
 $a = new AnimalClass;
 // uncomment the following and see the output
+
 //$a->CreateTransaction();
-$a->insertData();
-//$a->selectData();
+//$a->insertData();
+$a->selectData();
 //$a->updateData();
 //$a->fetchAllData();
 //$a->fetchAssoc();
@@ -193,7 +193,7 @@ $a->insertData();
 function fetchClass(){
     $a = new AnimalClass;
     //$query = "select * from animals";
-    
+
     $obj = $db->query($query)->fetchAll(PDO::FETCH_CLASS, 'AnimalClass');
     $obj = $db->query($query);
    //echo $this->db->errorCode()."<br/>";
