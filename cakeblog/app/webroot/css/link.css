@@ -1,0 +1,44 @@
+/* 
+    Document   : link.css
+    Created on : 28 Dec, 2011, 4:15:48 PM
+    Author     : mady
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+div.editOuter{
+        display:inline;
+        outline:solid #4ca83d 2px;
+        height: 20px;
+        width: 100px
+
+}
+a.edit:hover{
+     text-decoration:underline;
+     color:skyblue;
+}
+
+a.edit:link{
+     text-decoration:none;
+     color:green;
+}
+a.edit:visited{
+     text-decoration:none;
+     color:green;
+}
+a.edit:active{
+     text-decoration:underline;
+     color:skyblue;
+}
+
+
+
+

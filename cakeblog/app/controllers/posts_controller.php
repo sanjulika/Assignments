@@ -1,15 +1,16 @@
 <?php
 class PostsController extends AppController{
-        var $helper = array('Html','Form');
+        var $helpers = array('Html','Form','Hyperlink');
         var $name = 'Posts';
         var $components = array('Session');
 
         function index(){
                 $this->set('posts', $this->Post->find('all'));
+                
                 /*
                  * The line sets the view variable called 'posts' equal to the return value of the
                  * find('all') method of the Post model.
-                 * Our Post model is automatically available at $this->Post
+                 * Our Post model is automatically available at $this->Post.
                  */
         }
         
@@ -17,6 +18,7 @@ class PostsController extends AppController{
                 
                 $this->Post->id = $id;
                 $this->set('post', $this->Post->read());
+                //read() used to retrieve recod from database.
         }
 
         function add(){

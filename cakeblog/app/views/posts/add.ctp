@@ -10,13 +10,12 @@ and open the template in the editor.
     </head>
     <body>
             <h1>Add posts</h1>
-            <form id="PostAddForm" method="post" action="/posts/add">
         <?php
         echo $this->Form->create('Post');
         echo $this->Form->input('title');
         echo $this->Form->input('body',array('rows'=>'3'));
         echo $this->Form->end('Save Post');
         ?>
-            </form>
+            
     </body>
 </html>
