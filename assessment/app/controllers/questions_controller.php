@@ -1,7 +1,7 @@
 <?php
 class QuestionsController extends AppController{
     var $name='Questions';
-    var $helpers = array('Html','Form');
+    var $helpers = array('Html','Form','Javascript', 'Ajax');
     var $components =array('session','Auth');
 
     //public $no_of_ques=4;

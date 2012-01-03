@@ -12,14 +12,14 @@ class AssessmentsController extends AppController{
     }
     function add(){
             if (!empty($this->data)) {
-            			$this->Assessment->create();
-            			if ($this->Assessment->save($this->data)) {
-            				$this->Session->setFlash(__('The Assessment has been saved', true));
-            				$this->redirect(array('action' => 'index'));
-            			} else {
-            				$this->Session->setFlash(__('The Assessment could not be saved. Please, try again.', true));
-            			}
-            		}
+                $this->Assessment->create();
+                if ($this->Assessment->save($this->data)) {
+                    $this->Session->setFlash(__('The Assessment has been saved', true));
+                    $this->redirect(array('action' => 'index'));
+                } else {
+                    $this->Session->setFlash(__('The Assessment could not be saved. Please, try again.', true));
+                }
+            }
         }
 
 }

@@ -25,7 +25,7 @@
       <file leaf-file-name="users_controller.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="1" selection-start="664" selection-end="732" vertical-scroll-proportion="0.6330275">
+            <state line="26" column="0" selection-start="738" selection-end="738" vertical-scroll-proportion="0.7155963">
               <folding />
             </state>
           </provider>
@@ -208,7 +208,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1359" y="24" width="1362" height="721" extended-state="7" />
+    <frame x="1359" y="24" width="1362" height="721" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -291,7 +291,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="1" selection-start="664" selection-end="732" vertical-scroll-proportion="0.6330275">
+        <state line="26" column="0" selection-start="738" selection-end="738" vertical-scroll-proportion="0.7155963">
           <folding />
         </state>
       </provider>

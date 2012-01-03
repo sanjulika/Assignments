@@ -1,12 +1,12 @@
 <?php
     class ResultsController extends AppController{
         var $name='Results';
-        var $helpers = array('Html','Form');
+        var $helpers = array('Html','Form','Javascript', 'Ajax');
         var $components =array('Session','Auth');
         function add(){
             $user_id = $this->Auth->user('id');
             if (!empty($this->data)) {
-                $this->log($this->data);
+                //$this->log($this->data);
                 //$this->log($this->data['Result']['assessment_id']);
                 $this->Result->create();
                 if ($this->Result->saveAll($this->data)) {
