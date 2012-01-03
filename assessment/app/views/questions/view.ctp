@@ -1,5 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
     <title></title>
@@ -11,9 +10,6 @@
 //pr($count);
 //pr($user_id);
 echo $this->Form->create('Result',array('controller'=>'results','action'=>'add'));
-echo $ass_id.'<br/>';
-echo $questions['Question']['id'];
-echo '<br/>';
 echo $questions['Question']['question'];
 echo $this->Form->input('Result.question_id',array('type'=>'hidden','value'=>$questions['Question']['id']));
 echo $this->Form->input('Result.user_id',array('value'=>$user_id,'type'=>'hidden'));

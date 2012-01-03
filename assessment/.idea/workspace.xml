@@ -22,12 +22,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="questions_controller.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="questions_controller.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/questions_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="13" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0">
+            <state line="53" column="11" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.42307693">
               <folding>
-                <marker date="1325595633000" expanded="true" signature="2062:2554" placeholder="..." />
+                <marker date="1325598030000" expanded="true" signature="1867:2359" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -69,10 +69,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="results_controller.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="results_controller.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/results_controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="42" selection-start="996" selection-end="996" vertical-scroll-proportion="0.6465517">
+            <state line="34" column="42" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/results/add.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="7" selection-start="349" selection-end="349" vertical-scroll-proportion="-8.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/default.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -104,11 +122,11 @@
         <option value="$PROJECT_DIR$/app/controllers/users_controller.php" />
         <option value="$PROJECT_DIR$/app/views/questions/add.ctp" />
         <option value="$PROJECT_DIR$/app/views/results/add.ctp" />
-        <option value="$PROJECT_DIR$/app/views/questions/view.ctp" />
         <option value="$PROJECT_DIR$/app/controllers/assessments_controller.php" />
-        <option value="$PROJECT_DIR$/app/controllers/questions_controller.php" />
         <option value="$PROJECT_DIR$/app/views/assessments/index.ctp" />
+        <option value="$PROJECT_DIR$/app/views/questions/view.ctp" />
         <option value="$PROJECT_DIR$/app/controllers/results_controller.php" />
+        <option value="$PROJECT_DIR$/app/controllers/questions_controller.php" />
       </list>
     </option>
   </component>
@@ -159,6 +177,86 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assessment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assessment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assessment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cake" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assessment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assessment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cake" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assessment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assessment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cake" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assessment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assessment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cake" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -257,6 +355,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="questions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assessment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assessment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -389,6 +509,11 @@
     <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/layouts" />
+    </key>
   </component>
   <component name="RunManager" selected="PHP Script.students_controller.php">
     <configuration default="false" name="students_controller.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/app/controllers/students_controller.php">
@@ -526,20 +651,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/assessment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="45" selection-start="392" selection-end="392" vertical-scroll-proportion="0.3288364">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="23" selection-start="522" selection-end="522" vertical-scroll-proportion="0.3372681">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/report.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="2" selection-start="292" selection-end="292" vertical-scroll-proportion="0.35413152">
@@ -550,13 +661,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/users/register.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="36" selection-start="357" selection-end="357" vertical-scroll-proportion="0.31634447">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/results/add.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="7" selection-start="349" selection-end="349" vertical-scroll-proportion="0.3427065">
           <folding />
         </state>
       </provider>
@@ -589,22 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/questions_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="13" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1325595633000" expanded="true" signature="2062:2554" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/assessments_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="10" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/assessments/index.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="31" selection-start="380" selection-end="380" vertical-scroll-proportion="-4.5416665">
@@ -626,17 +714,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cake/libs/view/layouts/default.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.3364486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/default.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/questions/view.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="83" selection-start="602" selection-end="602" vertical-scroll-proportion="0.2609489">
+        <state line="0" column="34" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/results/add.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="7" selection-start="349" selection-end="349" vertical-scroll-proportion="-8.125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/results_controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="42" selection-start="996" selection-end="996" vertical-scroll-proportion="0.6465517">
+        <state line="34" column="42" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/assessments_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="10" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/questions_controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="11" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.42307693">
+          <folding>
+            <marker date="1325598030000" expanded="true" signature="1867:2359" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

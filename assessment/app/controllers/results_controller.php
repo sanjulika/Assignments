@@ -4,7 +4,7 @@
         var $helpers = array('Html','Form');
         var $components =array('Session','Auth');
         function add(){
-
+            $user_id = $this->Auth->user('id');
             if (!empty($this->data)) {
                 $this->log($this->data);
                 //$this->log($this->data['Result']['assessment_id']);
@@ -32,7 +32,8 @@
                 if($this->data['Result']['count']==4){
                     $result=$this->Result->find('count',array(
                         'conditions'=>array(
-                            'output'=>'1'
+                            'output'=>'1',
+                            'user_id'=>$user_id
                         )
                     ));
                     $this->set('result',$result);

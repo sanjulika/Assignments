@@ -14,14 +14,13 @@ class QuestionsController extends AppController{
     function add(){
 
         if (!empty($this->data)) {
-            pr($this->data);
-            //echo $this->data['Question']['answer'];
+
             $option=$this->data['Option'][$this->data['Question']['answer']]['option'];
-                echo $option."<br/>";
+
             $this->Question->create();
             if ($this->Question->saveAll($this->data)) {
                 $q_id=$this->Question->getLastInsertID();
-                echo  $q_id;
+
                 $option_id=$this->Question->Option->find('first',
                     array(
                         'conditions'=>array(
@@ -30,7 +29,7 @@ class QuestionsController extends AppController{
                         )
                     )
                 );
-                echo $option_id['Option']['id'];
+
                 $this->Question->Answer->set('option_id',$option_id['Option']['id']);
                 $this->Question->Answer->set('question_id',$q_id);
                 $this->Question->Answer->saveAll();
@@ -58,7 +57,7 @@ class QuestionsController extends AppController{
         $total_questions=$this->Question->find('count',array('conditions'=>array(
                        'assessment_id'=>$id
         )));
-        if($not_allowed==$total_questions){
+        if($not_allowed>=$total_questions){
             $this->Session->setFlash('You have already given the exam and not allowed to give again', true);
             $this->Redirect(array('controller'=>'assessments','action'=>'index'));
         }else{
