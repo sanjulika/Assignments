@@ -8,7 +8,7 @@
 <?php
 echo 'The final result is: <br/>';
 echo $result.' out of 4<br/>';
-echo $this->Html->Link('Restart the test',array('controller'=>'assessments','action'=>'index'));
+//echo $this->Html->Link('Restart the test',array('controller'=>'assessments','action'=>'index'));
 ?>
 </body>
 </html>

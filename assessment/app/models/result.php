@@ -6,9 +6,9 @@
         );
 
         var $belongsTo=array(
-               'Student'=>array(
-               'className' => 'Student',
-               'foreignKey' => 'Student_id',
+               'User'=>array(
+               'className' => 'User',
+               'foreignKey' => 'user_id',
                'conditions' => '',
                'fields' => '',
                'order' => ''

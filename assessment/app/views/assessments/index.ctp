@@ -6,7 +6,11 @@
 </head>
 <body>
 <?php
-pr($assessments);
+//pr($assessments);
+//pr($user_id);
+echo '<p align="center">welcome '.$user_id.'</p>';
+echo $this->Html->link('Logout',array('controller'=>'users','action'=>'logout'));
+echo '<br/>';
 echo $this->Html->link('Add Questions',array('controller'=>'questions','action'=>'index'));
 ?>
 <br/>
@@ -35,9 +39,12 @@ echo $this->Html->link('Add Questions',array('controller'=>'questions','action'=
         </td>
         <td class="action">
             <?php
-            echo $this->Html->link('View',array('action'=>'view',$assessment['Assessment']['id']));
+            /*echo $this->Html->link('View',array('action'=>'view',$assessment['Assessment']['id']));
+            echo '  ';
             echo $this->Html->link('Edit',array('action'=>'edit',$assessment['Assessment']['id']));
+            echo '  ';
             echo $this->Html->link('Delete',array('action'=>'delete',$assessment['Assessment']['id']));
+            echo '  ';*/
             echo $this->Html->link('Give Test',array('controller'=>'questions','action'=>'view',$assessment['Assessment']['id'],0));
             //echo $this->Html->link('Give Test',array('controller'=>'questions','action'=>'view',$assessment['Assessment']['id']));
             ?>

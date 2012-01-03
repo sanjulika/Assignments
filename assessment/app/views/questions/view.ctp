@@ -7,16 +7,16 @@
 <body>
 <?php
 
-pr($questions);
-pr($count);
+//pr($questions);
+//pr($count);
+//pr($user_id);
 echo $this->Form->create('Result',array('controller'=>'results','action'=>'add'));
 echo $ass_id.'<br/>';
-    echo $this->Form->input('Student.id');
 echo $questions['Question']['id'];
 echo '<br/>';
 echo $questions['Question']['question'];
 echo $this->Form->input('Result.question_id',array('type'=>'hidden','value'=>$questions['Question']['id']));
-echo $this->Form->input('Result.student_id',array('value'=>1,'type'=>'hidden'));
+echo $this->Form->input('Result.user_id',array('value'=>$user_id,'type'=>'hidden'));
 echo $this->Form->input('assessment_id',array('type'=>'hidden','value'=>$ass_id));
 echo $this->Form->input('count',array('type'=>'hidden','value'=>$count+1));
 //echo $this->Form->input('Question.active',array('value'=>1,'type'=>'hidden'));

@@ -2,9 +2,8 @@
     class ResultsController extends AppController{
         var $name='Results';
         var $helpers = array('Html','Form');
-        var $components =array('Session');
+        var $components =array('Session','Auth');
         function add(){
-
 
             if (!empty($this->data)) {
                 $this->log($this->data);

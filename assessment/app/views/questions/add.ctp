@@ -10,7 +10,6 @@
 echo $this->Form->create('Question',array('controller'=>'questions','action'=>'add'));
 echo $this->Form->input('assessment_id',array('type'=>'select','values'=>$assessments));
 echo $this->Form->input('question');
-echo $this->Form->input('id',array('type'=>'hidden'));
 echo $this->Form->input('Option.0.option');
 echo $this->Form->input('Option.1.option');
 echo $this->Form->input('Option.2.option');

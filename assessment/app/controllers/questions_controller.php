@@ -2,10 +2,12 @@
 class QuestionsController extends AppController{
     var $name='Questions';
     var $helpers = array('Html','Form');
-    var $components =array('session');
-    //public $count=0;
+    var $components =array('session','Auth');
+
+    //public $no_of_ques=4;
 
     function index(){
+
        $this->set('questions',$this->Question->find('all'));
 
     }
@@ -43,21 +45,35 @@ class QuestionsController extends AppController{
 
 
     function view($id,$count){
-        $this->Question->Assessment->id=$id;
-        $this->set('ass_id',$this->Question->Assessment->id);
-        //$count=$this->session->read('data');
-        $this->log($count);
-        $this->set('count',$count);
-        $total_questions=$this->Question->find('count',array('conditions'=>array(
-            'assessment_id'=>$id
-        )));
-        $this->set('questions',$this->Question->find('first',array(
+        $user_id = $this->Auth->user('id');
+        $this->set('user_id',$user_id);
+        $this->log($user_id);
+        $not_allowed=$this->Question->Result->find('count',array(
             'conditions'=>array(
-            'assessment_id'=>$id,
-            'question_id'=>rand(1,$total_questions)
+            'Result.user_id'=>$user_id
         )
+        ));
+        $this->log($not_allowed);
+        $this->Question->Assessment->id=$id;
+        $total_questions=$this->Question->find('count',array('conditions'=>array(
+                       'assessment_id'=>$id
         )));
+        if($not_allowed==$total_questions){
+            $this->Session->setFlash('You have already given the exam and not allowed to give again', true);
+            $this->Redirect(array('controller'=>'assessments','action'=>'index'));
+        }else{
 
+            $this->set('ass_id',$this->Question->Assessment->id);
+            $this->log($count);
+            $this->set('count',$count);
+
+            $this->set('questions',$this->Question->find('first',array(
+                'conditions'=>array(
+                'assessment_id'=>$id,
+                'question_id'=>rand(1,$total_questions)
+            )
+            )));
+        }
     }
 //'order'=>array('rand()'),
 

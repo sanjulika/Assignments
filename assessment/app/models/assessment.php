@@ -7,11 +7,11 @@ class Assessment extends AppModel{
         );
 
     var $hasAndBelongToMany = array(
-            'Student'=>array(
-            'className'=>'Student',
-            'joinTable'=>'assessments_students',
+            'User'=>array(
+            'className'=>'User',
+            'joinTable'=>'assessments_users',
             'foreignKey'=>'assessment_id',
-            'associationForeignKey'=>'student_id',
+            'associationForeignKey'=>'user_id',
             'conditions' => '',
             'fields' => '',
             'order' => '',
