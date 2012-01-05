@@ -183,7 +183,7 @@ $a = new AnimalClass;
 // uncomment the following and see the output
 //$a->CreateTransaction();
 //$a->insertData();
-//$a->selectData();
+$a->selectData();
 //$a->updateData();
 //$a->fetchAllData();
 //$a->fetchAssoc();
