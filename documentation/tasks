@@ -1,0 +1,13 @@
+Project: PoLS
+date:06/01/2011
+Todays Tasks:
+1) Inital cakephp configuration of the project - completed
+2) write the migration for database - in process
+3) fetching project details data from project api of gravity
+4) storing the project details into database
+5) fetching project stories details from gravity api
+6) storing the stories details into database
+7) fetching project project issues from gravity api
+8) storing the project issues details into database
+9) fetching stories tasks details from gravity api
+10) storing the stories tasks details into database
