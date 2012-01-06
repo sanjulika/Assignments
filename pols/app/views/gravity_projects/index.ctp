@@ -1,4 +1,6 @@
 <?php
+
+	//print_r($id);
 echo $this->Form->create('',array('controller'=>'gravity_projects','action'=>'fetchData'));
 //echo $this->Form->input('url');
 //echo $this->Form->input('key');

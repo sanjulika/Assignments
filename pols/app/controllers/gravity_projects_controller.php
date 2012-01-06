@@ -5,7 +5,9 @@ class GravityProjectsController extends AppController{
 	var $components = array('Session');
 	var $key='baee186cd1cfeb01fcacaee4964705440d415142820f48ba732617dce818205c';
 	function index(){
-
+		//$gravity_project_id=$this->GravityProject->field('id');
+		//echo $this->GravityProject->field('id');
+//		$this->set('id',$gravity_project_id);
 	}
 	function curl($url){
 		$ch = curl_init();
@@ -41,7 +43,39 @@ class GravityProjectsController extends AppController{
 		}
 		$this->GravityProject->set('total_no_stories',$result[1]['total']);
 		$this->GravityProject->set('total_no_issues',$result[2]['total']);
-		$this->GravityProject->saveAll();
+		$this->GravityProject->save();
+
+		$gravity_project_id=$this->GravityProject->field('id');
+		foreach( $result[0]['participants'] as $key=>$name ){
+		$this->GravityProject->Participant->create();
+		$this->GravityProject->Participant->set('gravity_project_id',$gravity_project_id);
+		$this->GravityProject->Participant->set('participant_name',$name['name']);
+		$this->GravityProject->Participant->set('url',$name['url']);
+		$this->GravityProject->Participant->saveAll();
+		}
+
+		foreach( $result[1]['results'] as $key=>$story ){
+		$this->GravityProject->Story->create();
+		$this->GravityProject->Story->set('gravity_project_id',$gravity_project_id);
+		$this->GravityProject->Story->set('story_item_id',$story['item_id']);
+		$this->GravityProject->Story->set('cost',$story['cost']);
+		$this->GravityProject->Story->set('created_date',$story['created_date']);
+		$this->GravityProject->Story->set('completed_date',$story['completed_date']);
+		$this->GravityProject->Story->saveAll();
+		}
+		foreach( $result[2]['issues'] as $key=>$issue ){
+			$this->GravityProject->Issue->create();
+			$this->GravityProject->Issue->set('gravity_project_id',$gravity_project_id);
+			$this->GravityProject->Issue->set('issue_item_id',$issue['item_id']);
+			$this->GravityProject->Issue->set('reported_by',$issue['reported_by']['name']);
+			$this->GravityProject->Issue->set('assigned_to',$issue['assigned_to']['name']);
+			$this->GravityProject->Issue->set('status',$issue['status']);
+			$this->GravityProject->Issue->set('created_date',$issue['created_date']);
+			$this->GravityProject->Issue->set('completed_date',$issue['completed_date']);
+			$this->GravityProject->Issue->set('severity',$issue['severity']);
+			$this->GravityProject->Issue->saveAll();
+		}
+			$this->GravityProject->saveAll();
 		$this->Session->setFlash('The project details has been saved', true);
 		$this->redirect(array('action'=>'index'));
 

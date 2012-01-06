@@ -9,7 +9,7 @@
 	//participants
 	$i=1;
 	foreach( $result[0]['participants'] as $key=>$name ){
-		echo $i.') '.$name['name'];
+		echo $i.') '.$name['name']." ".$name['url'];
 		echo '<br/>';
 		$i++;
 	}
